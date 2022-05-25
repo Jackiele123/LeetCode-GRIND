@@ -24,7 +24,7 @@ public:
             head=current;
             current=linkNext;
             
-        }
+        }  
         return head;
             
     }
