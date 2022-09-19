@@ -17,10 +17,6 @@ public:
             if (nums[i]< smallest)
                 smallest = nums[i];
         }
-        if (largest >= 999999999) 
-            largest = 99;
-        if (smallest <= -999999999)
-            smallest = 0;
         for (int i = smallest; i < largest + 1; i++){
             if (map.count(i) == 1){
                 cout << count << endl;
