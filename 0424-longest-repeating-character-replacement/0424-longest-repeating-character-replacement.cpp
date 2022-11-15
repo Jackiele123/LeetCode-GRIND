@@ -14,7 +14,7 @@ public:
             count[s[right] - 'A']++;
             if (count [s[right] - 'A'] > longest)
                 longest = count[s[right] - 'A'];
-            while(right - left + 1 - longest > k){
+            if(right - left + 1 - longest > k){
                 count[s[left] - 'A']--;
                 left++;
             }
