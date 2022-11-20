@@ -8,14 +8,9 @@ public:
         while (left <= right){
             
             int middle = left + (right - left)/2;
-             std::cout << middle << std::endl;
             
             if (nums[middle] == target)
                 return middle;
-            if (nums[left] == target)
-                return left;
-            if (nums[right] == target)
-                return right;
             
             if (nums[left] <= nums[middle]){
                 if (nums[left] <= target && target <= nums[middle])
