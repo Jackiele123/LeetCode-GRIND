@@ -35,7 +35,6 @@ public:
         
         float res[size];
         
-        
         for (int i = 0; i < size; i++)
         {       
             if (arr1 >= nums1.size())
@@ -62,10 +61,7 @@ public:
                 }
             }
         }
-        
-        for (int i = 0; i < size; i++)
-            std::cout << res[i] << std::endl;
-        
+
         if(totalSize % 2)
             ans = res[size - 1];
         else
