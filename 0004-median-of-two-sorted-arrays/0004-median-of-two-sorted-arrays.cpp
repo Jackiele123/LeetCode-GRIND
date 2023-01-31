@@ -13,24 +13,23 @@ public:
             size = (totalSize+1)/2;
         else
             size = (totalSize/2) + 1;
-        std::cout << size << std::endl;
+
         if (nums1.empty() || nums2.empty())
         {
             if(totalSize % 2)
             {
                 if(nums1.empty())
-                    ans = nums2[size - 1];
+                    return nums2[size - 1];
                 else
-                     ans = nums1[size - 1];
+                    return nums1[size - 1];
             }
             else
             {
                 if(nums1.empty())
-                    ans = (nums2[size-1] + nums2[size-2])/2.0f;
+                    return (nums2[size-1] + nums2[size-2])/2.0f;
                 else
-                    ans = (nums1[size - 1] + nums1[size - 2])/2.0f;
+                    return (nums1[size - 1] + nums1[size - 2])/2.0f;
             }
-            return ans;
         }
         
         float res[size];
@@ -63,10 +62,8 @@ public:
         }
 
         if(totalSize % 2)
-            ans = res[size - 1];
+            return res[size - 1];
         else
-            ans = (res[size - 1] + res[size - 2])/2;
-        
-        return ans;
+            return (res[size - 1] + res[size - 2])/2.0f;
     }
 };
