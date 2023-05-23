@@ -8,10 +8,7 @@ class Solution:
                 continue
             if len(stack) != 0:
                 obj+=' '
-            print(obj)
             stack.appendleft(obj)
             
-        for s in stack:
-            print(s)
         return "".join(stack)
             
